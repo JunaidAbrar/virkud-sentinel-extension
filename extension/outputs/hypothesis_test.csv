@@ -1,0 +1,16 @@
+Technique,Name,Category,Splunk,Elastic,Sigma,Sentinel
+T1078,Valid Accounts,Cloud/Identity (prereg),39,13,52,78
+T1098,Account Manipulation,Cloud/Identity (prereg),6,7,23,38
+T1530,Data from Cloud Storage,Cloud/Identity (prereg),2,0,0,1
+T1110,Brute Force (incl. password spraying),Cloud/Identity (prereg),15,11,22,29
+T1538,Cloud Service Dashboard,Cloud/Identity (prereg),0,0,0,0
+T1526,Cloud Service Discovery,Cloud/Identity (prereg),4,0,1,0
+T1580,Cloud Infrastructure Discovery,Cloud/Identity (prereg),2,0,0,0
+T1136,Create Account,Cloud/Identity (prereg),11,2,15,7
+T1556,Modify Authentication Process,Cloud/Identity (prereg),3,5,4,3
+T1547,Boot or Logon Autostart Execution,Host (prereg),15,23,50,2
+T1543,Create or Modify System Process,Host (prereg),16,26,46,1
+T1546,Event Triggered Execution,Host (prereg),14,14,54,8
+T1014,Rootkit,Host (prereg),3,0,1,0
+T1574,Hijack Execution Flow,Host (prereg),9,9,64,1
+T1055,Process Injection,Host (prereg),21,12,35,1

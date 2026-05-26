@@ -1,0 +1,5 @@
+,# Rules,# Unique Techniques,% Coverage (ATT&CK v11)
+Splunk,911,100,52.4%
+Elastic,473,92,48.2%
+Sigma,2195,151,79.1%
+Sentinel,349,79,41.4%
