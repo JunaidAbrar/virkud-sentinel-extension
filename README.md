@@ -32,29 +32,19 @@ A reproduction and extension of *"How does Endpoint Detection use the MITRE ATT&
 3. **Tests a pre-registered hypothesis** that Sentinel — as a cloud-native SIEM — would show systematically different ATT&CK coverage than the on-host EDR products. The hypothesis is strongly confirmed.
 4. **Documents 27 reproduction events**, including five distinct version-drift workarounds (NumPy 2.0, pandas 3.0, NLTK 3.9, Linux-only CUDA wheels, etc.) encountered during cross-platform reproduction.
 
-See **[REPORT.docx](docs/INFO5001_Research_Report.docx)** for the full 36-page analysis.
+See **[REPORT.pdf](docs/INFO5001_Research_Report.pdf)** for the full 36-page analysis.
 See **[REPRODUCTION_LOG.md](REPRODUCTION_LOG.md)** for the chronological event log.
 
 ## Repository Structure
-.
-├── README.md                       ← You are here
-├── REPRODUCTION_LOG.md             ← 27-event chronological log
-├── LICENSE                         ← MIT
-│
-├── extension/                      ← This work's primary contribution
-│   ├── notebooks/
-│   │   ├── sentinel_adapter.py     ← Loads & transforms Sentinel CSV
-│   │   ├── virkud_loader.py        ← Wraps original notebook loaders
-│   │   └── sentinel_rq1_analysis.ipynb
-│   ├── outputs/                    ← Results (CSVs, technique lists)
-│   └── sentinel_data/              ← Microsoft Sentinel ATT&CK feed
-│
-├── reproduction/                   ← Patched reproduction of original
-│   └── code/
-│       ├── RQ1_Analysis.ipynb      ← np.NaN → np.nan, .applymap → .map
-│       └── RQ3_Analysis.ipynb      ← Same patches
-│
-└── docs/                           ← Full written report
+
+| Path | Description |
+|------|-------------|
+| `extension/` | **Primary contribution** — Sentinel analysis notebooks, outputs, and data |
+| `extension/notebooks/` | `sentinel_adapter.py`, `virkud_loader.py`, analysis notebook |
+| `extension/outputs/` | Results: coverage CSV, hypothesis tests, technique lists |
+| `extension/sentinel_data/` | Microsoft Sentinel ATT&CK feed (~23MB) |
+| `reproduction/` | Patched reproduction of original paper (RQ1 + RQ3 notebooks) |
+| `docs/` | Full 36-page report + supplementary materials |
 
 ## Reproducing These Results
 
